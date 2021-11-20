@@ -876,7 +876,7 @@
    * differs, a mode set eeprom write will be completed at initialization.
    * Use the option below to force an eeprom write to a V3.1 probe regardless.
    */
-  #define BLTOUCH_SET_5V_MODE
+  //#define BLTOUCH_SET_5V_MODE
 
   /**
    * Safety: Activate if connecting a probe with an unknown voltage mode.
@@ -1156,7 +1156,7 @@
  * vibration and surface artifacts. The algorithm adapts to provide the best possible step smoothing at the
  * lowest stepping frequencies.
  */
-//#define ADAPTIVE_STEP_SMOOTHING
+#define ADAPTIVE_STEP_SMOOTHING
 
 /**
  * Custom Microstepping
@@ -2209,7 +2209,7 @@
 // @section serial
 
 // The ASCII buffer for serial input
-#define MAX_CMD_SIZE 500
+#define MAX_CMD_SIZE 96
 #define BUFSIZE 4
 
 // Transmission to Host Buffer Size
@@ -2236,18 +2236,18 @@
 #if ENABLED(SDSUPPORT)
   // Enable this option to collect and display the maximum
   // RX queue usage after transferring a file to SD.
-  #define SERIAL_STATS_MAX_RX_QUEUED
+  //#define SERIAL_STATS_MAX_RX_QUEUED
 
   // Enable this option to collect and display the number
   // of dropped bytes after a file transfer to SD.
-  #define SERIAL_STATS_DROPPED_RX
+  //#define SERIAL_STATS_DROPPED_RX
 #endif
 
 // Monitor RX buffer usage
 // Dump an error to the serial port if the serial receive buffer overflows.
 // If you see these errors, increase the RX_BUFFER_SIZE value.
 // Not supported on all platforms.
-#define RX_BUFFER_MONITOR
+//#define RX_BUFFER_MONITOR
 
 /**
  * Emergency Command Parser
@@ -3032,7 +3032,7 @@
    * Enable M122 debugging command for TMC stepper drivers.
    * M122 S0/1 will enable continuous reporting.
    */
-  #define TMC_DEBUG
+  //#define TMC_DEBUG
 
   /**
    * You can set your own advanced settings by filling in predefined functions.
@@ -3792,7 +3792,7 @@
  */
 
 // Custom Menu: Main Menu
-#define CUSTOM_MENU_MAIN
+//#define CUSTOM_MENU_MAIN
 #if ENABLED(CUSTOM_MENU_MAIN)
   #define CUSTOM_MENU_MAIN_TITLE "Custom Commands"
   //#define CUSTOM_MENU_MAIN_SCRIPT_DONE "M117 User Script Done"
@@ -3909,7 +3909,7 @@
  *
  * Implement M486 to allow Marlin to skip objects
  */
-//#define CANCEL_OBJECTS
+#define CANCEL_OBJECTS
 #if ENABLED(CANCEL_OBJECTS)
   #define CANCEL_OBJECTS_REPORTING // Emit the current object as a status message
 #endif
