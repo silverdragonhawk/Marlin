@@ -102,7 +102,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 2
+#define SERIAL_PORT 0
 
 /**
  * Serial Port Baud Rate
@@ -643,7 +643,7 @@
   // Creality Ender-3 Pro
   #define DEFAULT_bedKp 135.95
   #define DEFAULT_bedKi 23.60
-  #define DEFAULT_bedKd 522.04FF
+  #define DEFAULT_bedKd 522.04
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
